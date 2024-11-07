@@ -7,16 +7,14 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
-    background-color: #c1c7d5;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+body {
+    background-color: #121212; /* Fundo escuro */
+    color: #BB86FC; /* Fonte rosa */
 }
 
-.showcase .navbar-bottom{
+.showcase .navbar-bottom {
     width: 100%;
-    background-color: #dde6fa;
+    background-color: #1E1E1E; /* Fundo claro */
     padding: 25px 95px;
     align-items: center;
     margin: auto;
@@ -26,14 +24,14 @@ body{
     overflow: hidden;
 }
 
-.showcase .navbar-bottom .menu-right{
+.showcase .navbar-bottom .menu-right {
     display: flex;
     list-style: none;
     font-size: 14px;
     font-weight: 600;
 }
 
-.showcase .navbar-bottom .gabriel{
+.showcase .navbar-bottom .gabriel {
     display: flex;
     list-style: none;
     font-size: 20px;
@@ -41,39 +39,85 @@ body{
     text-decoration: none;
     display: inline-block;
     padding: 0 20px;
-    color: black;
+    color: #BB86FC; /* Fonte rosa */
     transition: all 0.5s ease;
 }
 
-.showcase .navbar-bottom .menu-right li:last-child{
-    display: none;
+.showcase .navbar-bottom .menu-right li {
+    display: block;
 }
 
-.showcase .navbar-bottom .menu-right a{
+.showcase .navbar-bottom .menu-right a {
     text-decoration: none;
     display: inline-block;
     padding: 0 20px;
-    color: black;
+    color: #BB86FC; /* Fonte rosa */
     transition: all 0.5s ease;
 }
 
-.showcase .navbar-bottom .menu-right a:hover{
-    color: aqua;
+.showcase .navbar-bottom .menu-right a:hover {
+    color: #03DAC5; /* Cor dos botões */
 }
 
-.showcase-content{
+.showcase-content {
     max-width: 600px;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 150px; /* Ajuste a distância do topo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px); /* Altura da tela menos o tamanho da navbar */
 }
 
 .showcase-content .titulo1, .showcase-content .titulo2 {
     margin: 10px 0;
-    z-index: 1000px 0;
+    z-index: 1000;
 }
 
-.showcase-content p{
+.showcase-content p {
     font-size: 20px;
 }
 
+.btn-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #1E1E1E; /* Cor dos botões */
+    color: #cfcfcf; /* Fundo escuro */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.5s ease; /* Transição suave para a cor */
+}
+
+.btn:hover {
+    background: #0da394; /* Muda para verde quando o mouse está sobre */
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.imagens a img {
+    width: 50px;
+    margin: 0 10px;
+    border-radius: 50%; /* Torna as imagens circulares */
+    border: 2px solid #BB86FC; /* Cor da borda das imagens */
+}
+
+.imagens .github img {
+    filter: none; /* Remove qualquer filtro de cor para o GitHub */
+}
+
+.imagens .linkedin img {
+    filter: none; /* Mantém a cor original do LinkedIn */
+}
